@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Spartan</title>
+</head>
+<body>
+    <header id="header">
+        <img id="header-img" src="images/spartan.jpeg" alt="Spartan Cricket Kit Logo"/>
+        <nav id="nav-bar">
+            <ul id="links">
+                <li><a class="nav-link" href="#features">Features</a></li>
+                <li><a class="nav-link" href="#video">How it works</a></li>
+                <li><a class="nav-link" href="#pricing">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="mail">
+            <h2>Premium Cricket Equipment</h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input id="email" placeholder="Enter your email address" type="email" name="email" required/>
+                <input id="submit" type="submit" value="GET STARTED"/>
+            </form>
+        </section>
+        <section id="features">
+            <div class="feature">
+                <h2>High-Quality Materials</h2>
+                <p>Our cricket kits are made from the finest materials to ensure durability and performance.</p>
+            </div>
+            <div class="feature">
+                <h2>Advanced Design</h2>
+                <p>Designed with input from top cricket players, our kits offer the best in comfort and functionality.</p>
+            </div>
+            <div class="feature">
+                <h2>Fast Shipping</h2>
+                <p>We offer fast and reliable shipping to ensure you get your kit when you need it.</p>
+            </div>
+        </section>
+        <section id="video">
+            <iframe id="video" src="https://www.youtube.com/embed/your_video_id" width="600" height="300" allowfullscreen></iframe>
+        </section>
+        <section id="pricing">
+            <div class="product">
+                <h2>Basic Kit</h2>
+                <p>$199</p>
+                <ul>
+                    <li>Bat</li>
+                    <li>Ball</li>
+                    <li>Gloves</li>
+                </ul>
+                <button>Select</button>
+            </div>
+            <div class="product">
+                <h2>Pro Kit</h2>
+                <p>$299</p>
+                <ul>
+                    <li>Premium Bat</li>
+                    <li>High-Quality Balls</li>
+                    <li>Full Pads Set</li>
+                </ul>
+                <button>Select</button>
+            </div>
+            <div class="product">
+                <h2>Elite Kit</h2>
+                <p>$399</p>
+                <ul>
+                    <li>Top-Tier Bat</li>
+                    <li>Custom Balls</li>
+                    <li>Full Elite Protection Gear</li>
+                </ul>
+                <button>Select</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul class="address">
+            <li><a>Privacy</a></li>
+            <li><a>Terms</a></li>
+            <li><a>Contact</a></li>
+        </ul>
+        <p>Copyright 2023, Spartan Cricket Kit</p>
+    </footer>
+    <script>
+        document.getElementById('submit').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert('Thank you for getting started!');
+        });
+    </script>
+</body>
+</html>
